@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "454597997059",
+    "firebase_url": "https://curies-alpha.firebaseio.com",
+    "project_id": "curies-alpha",
+    "storage_bucket": "curies-alpha.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454597997059:android:f3421227df52425db2d436",
+        "android_client_info": {
+          "package_name": "in.curies.alpha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454597997059-iml9dstoeumomdinf6r1jr1ectr9omad.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtUlhr71B9x4wnHrBpr-2Ofx8J_rSsTsA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454597997059-iml9dstoeumomdinf6r1jr1ectr9omad.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
