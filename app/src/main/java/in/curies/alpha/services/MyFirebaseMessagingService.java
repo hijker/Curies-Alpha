@@ -1,4 +1,4 @@
-package in.curies.alpha;
+package in.curies.alpha.services;
 
 import android.util.Log;
 

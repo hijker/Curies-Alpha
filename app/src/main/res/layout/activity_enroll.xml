@@ -4,69 +4,75 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".EnrollActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
+    <ProgressBar
+        android:id="@+id/enrollment_progress_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
 
-    </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+        android:id="@+id/enrollment_progress_text"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Enrollment in progress"
+        android:layout_marginTop="200dp"
+        app:layout_anchorGravity="center"
+        android:visibility="invisible" />
+
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView"
+
+        <EditText
+            android:id="@+id/number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="150dp"
-            android:textSize="15dp"
-            android:ems="10" />
+            android:layout_marginTop="100dp"
+            android:editable="false"
+            android:text="Email" />
 
-        <Button
-            android:id="@+id/schedule"
+        <EditText
+            android:id="@+id/coupon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/number"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:hint="Coupon code" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_below="@+id/coupon"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="50dp"
-            android:text="Test Schedule" />
+            android:spinnerMode="dropdown"/>
 
         <Button
-            android:id="@+id/tutorials"
+            android:id="@+id/enroll"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/schedule"
+            android:layout_below="@+id/spinner"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="50dp"
-            android:text="Watch tutorials" />
+            android:text="Enroll" />
 
-        <Button
-            android:id="@+id/log_out"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tutorials"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="50dp"
-            android:text="Log out" />
+
 
     </RelativeLayout>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

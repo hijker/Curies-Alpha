@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".DashBoardActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
@@ -15,9 +16,9 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#B52380"
-            app:title="@string/app_name"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/app_name" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -27,85 +28,79 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/offer"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/current_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="120dp"
+            android:ems="10"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/log_out"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="true"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="70dp"
-            android:text="What do we offer"
-            android:textSize="40dp" />
-
-        <TextView
-            android:id="@+id/about_us"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/offer"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:text="About Us"
-            android:textSize="25dp" />
-
-        <TextView
-            android:id="@+id/join_us"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/about_us"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="50dp"
-            android:text="Join us, Login below"
-            android:textSize="15dp" />
-
-        <EditText
-            android:id="@+id/number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/join_us"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:ems="10"
-            android:hint="Number"
-            android:inputType="number" />
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="20dp"
+            android:text="Log out" />
 
         <Button
-            android:id="@+id/get_otp"
+            android:id="@+id/take_exam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/number"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="0dp"
-            android:background="#256365B5"
-            android:text="Get Otp" />
-
-        <EditText
-            android:id="@+id/otp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/get_otp"
+            android:layout_below="@+id/textView"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:ems="10"
-            android:visibility="invisible"
-            android:hint="otp"
-            android:inputType="number" />
+            android:layout_marginTop="50dp"
+            android:text="Take Exam" />
 
         <Button
-            android:id="@+id/verify"
+            android:id="@+id/tutorials"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/take_exam"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/otp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="50dp"
-            android:layout_marginEnd="0dp"
-            android:visibility="invisible"
-            android:background="#256365B5"
-            android:text="Verify" />
+            android:text="Watch tutorials" />
+
+        <Button
+            android:id="@+id/talk_to_tutor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tutorials"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:text="Talk to my tutor" />
+
+        <Button
+            android:id="@+id/enroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/talk_to_tutor"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:text="Enroll" />
+
+
 
     </RelativeLayout>
 

@@ -20,4 +20,6 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_fire_base_login">FireBaseLogin</string>
     <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="title_activity_create_profile">CreateProfileActivity</string>
+    <string name="title_activity_no_internet">NoInternetActivity</string>
 </resources>
